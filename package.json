@@ -1,9 +1,13 @@
 {
   "name": "portfolio3d",
+  "homepage": "https://aaryanworks.github.io/my-personal-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -15,6 +19,7 @@
     "@react-three/fiber": "^8.16.6",
     "autoprefixer": "^10.4.19",
     "framer-motion": "^11.2.6",
+    "gh-pages": "^6.1.1",
     "maath": "^0.10.7",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
